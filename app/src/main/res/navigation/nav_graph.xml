@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/eventDashboardFragment">
+    <fragment
+        android:id="@+id/eventDashboardFragment"
+        android:name="com.example.eventplannerapp.EventDashboardFragment"
+        android:label="EventDashboard">
+        <action
+            android:id="@+id/action_dashboard_to_add"
+            app:destination="@+id/addEventFragment">
+            <argument
+                android:name="event"
+                app:argType="com.example.eventplannerapp.Event"
+                app:nullable="true"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/addEventFragment"
+        android:name="com.example.eventplannerapp.AddEventFragment"
+        android:label="AddEvent">
+        <argument
+            android:name="event"
+            app:argType="com.example.eventplannerapp.Event"
+            app:nullable="true"/>
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titleCardTextView"
+            android:layout_width="217dp"
+            android:layout_height="52dp"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textSize="34sp"
+            android:translationX="10dp"
+            android:translationY="10dp" />
+
+        <TextView
+            android:id="@+id/categoryCardTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="TextView"
+            android:textAlignment="textEnd"
+            android:textSize="20sp"
+            android:translationX="265dp"
+            android:translationY="10dp" />
+
+        <TextView
+            android:id="@+id/locationCardTextView"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:translationX="10dp"
+            android:translationY="70dp" />
+
+        <TextView
+            android:id="@+id/dateCardTextView"
+            android:layout_width="132dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="03/04/2026"
+            android:inputType="date"
+            android:textSize="20sp"
+            android:translationX="10dp"
+            android:translationY="120dp" />
+
+        <TextView
+            android:id="@+id/timeCardTextView"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:textAlignment="center"
+            android:hint="12:00PM"
+            android:inputType="time"
+            android:textSize="20sp"
+            android:translationX="240dp"
+            android:translationY="120dp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
