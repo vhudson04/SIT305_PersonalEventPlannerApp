@@ -44,8 +44,8 @@ The app uses Room for local data persistence.
 - Retrieve all events (sorted by date)
 
 ### Example Query
-@Query("SELECT * FROM events ORDER BY date DESC"
-LiveData<List<Event>> getAllEvents();
+- @Query("SELECT * FROM events ORDER BY date DESC"
+- LiveData<List<Event>> getAllEvents();
 
 # Navigation Flow
 Mention your navigation graph.
@@ -74,5 +74,3 @@ Navigation is managed using a NavController and navigation graph XML.
 # Author
 Vincent Hudson
 GitHub: https://github.com/vhudson04
-
-Navigation is managed using a NavController and navigation graph XML.
